@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingBottom="5sp"
+    android:paddingTop="5sp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="khushboo.rohit.osmnavi.MainActivity">
+
+    <fragment
+        android:id="@+id/ending_destination_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+    <TextView
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/btnSpeak2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:onClick="promptSpeechInputView"
+        android:src="@drawable/ic_speaker_dark"
+        android:tint="@color/cast_expanded_controller_background_color"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/voice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentStart="true"
+        android:background="#808080"
+        android:onClick="voice"
+        android:text="voice command"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:background="#000000"
+        android:onClick="onStartButton"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Next Instruction"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:onClick="onNextButton"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:text="Add Text"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="#000000"
+        android:id="@+id/button"
+        android:onClick="changeLayout" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:text="Saved routes"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:background="#000000"
+        android:id="@+id/button_save"
+        android:onClick="onSaveButton" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:onClick="showMessage1"
+            android:text="Show DB"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonAM"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:onClick="aroundMe"
+            android:text="Around Me"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Export DB"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:background="#000000"
+            android:id="@+id/button5"
+            android:onClick="exportDb" />
+
+    </TableRow>
+
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_marginTop="59dp"-->
+        <!--android:text="lat, long" />-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5sp"
+        android:background="#FFFFFF"/>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_weight="10"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Debug"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="#000000"
+            android:id="@+id/button9"
+            android:onClick="onDebugButton" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear Data"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="#000000"
+            android:id="@+id/button10"
+            android:onClick="clearData" />
+    </TableRow>
+</LinearLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+    <!--<org.osmdroid.views.MapView android:id="@+id/map"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
+
+<!--</LinearLayout>-->
