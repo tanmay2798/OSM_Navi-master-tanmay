@@ -4,7 +4,7 @@ Android Application for the navigation of visually impaired
 
 Objective - To develop an Android App to help visually impaired persons navigate to their desired destinations
 
-# Key Features:
+## Key Features:
 
 Audio based interaction, simple and blind-friendly interface
 
@@ -20,4 +20,4 @@ Uses Open Street Mapping (OSM) and routing (OSRM) services for route allocation
 
 Allows addition of personal landmarks and instructions
 
-Read about the initiative at this Medium Blog
+Read about the initiative [here](https://medium.com/@tanmaygoyal98/osm-navi-424fc63df8eb)
